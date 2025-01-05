@@ -1,0 +1,52 @@
+query users(
+  $offset: Int
+  $limit: Int
+  $orderBy: UsersOrderBy
+  $where: UsersFilters
+) {
+  users(offset: $offset, limit: $limit, orderBy: $orderBy, where: $where) {
+    id
+    name
+    age
+  }
+}
+
+query usersSingle($offset: Int, $orderBy: UsersOrderBy, $where: UsersFilters) {
+  usersSingle(offset: $offset, orderBy: $orderBy, where: $where) {
+    id
+    name
+    age
+  }
+}
+
+mutation insertIntoUsers($values: [UsersInsertInput!]!) {
+  insertIntoUsers(values: $values) {
+    id
+    name
+    age
+  }
+}
+
+mutation insertIntoUsersSingle($values: UsersInsertInput!) {
+  insertIntoUsersSingle(values: $values) {
+    id
+    name
+    age
+  }
+}
+
+mutation updateUsers($set: UsersUpdateInput!, $where: UsersFilters) {
+  updateUsers(set: $set, where: $where) {
+    id
+    name
+    age
+  }
+}
+
+mutation deleteFromUsers($where: UsersFilters) {
+  deleteFromUsers(where: $where) {
+    id
+    name
+    age
+  }
+}
