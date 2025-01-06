@@ -1,4 +1,4 @@
-# Experimental Starter Project: Drizzle ORM, GraphQL, and Codegen Integration
+# Experimental Starter Project: Drizzle ORM, GraphQL, and Codegen Integration (WIP)
 
 This project is an experimental starter template designed to integrate the following technologies:
 
